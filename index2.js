@@ -1,4 +1,4 @@
-var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzhXzyNMepTzIZRKtvOHVzQmj8gKHKaXzuFSk7tbWM_fw2614f-E6dyh2osAqo70xndmQ/exec'; // スクリプトURLを置き換える
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxIza4c7pEr_yBzkzCugqrA1C62PulcyqNODmI3LTSpGfMLuM2PaWfXKlyVokRUmH2sLw/exec'; // スクリプトURLを置き換える
 
 let previousData = {};
 let currentPage = 0;
