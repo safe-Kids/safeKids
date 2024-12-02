@@ -31,7 +31,7 @@ function register() {
   };
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbw8_4QaVizVfkx7cF7ghADMC1mCqUFNSN6nc-WRWyuZYam54jRLE47-H3fKotNrSt0Lgw/exec",
+    "https://script.google.com/macros/s/AKfycbxIza4c7pEr_yBzkzCugqrA1C62PulcyqNODmI3LTSpGfMLuM2PaWfXKlyVokRUmH2sLw/exec",
     {
       method: "POST",
       mode: "cors",
