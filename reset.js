@@ -1,10 +1,18 @@
 function sendResetEmail() {
   const mailAddress = document.getElementById('mailAddress').value;
 
-  if (!mailAddress) {
-    alert('メールアドレスを入力してください。');
-    return;
+ 
+  const allowedDomains = ["@gmail.com", ".ac.jp"];//許可するドメイン名
+
+  function isAllowedDomain(mailAddress) {
+    return allowedDomains.some(domain => mailAddress.endsWith(domain));
   }
+
+  if (!isAllowedDomain(mailAddress)) {
+    alert("Googleメールアドレス、または.ac.jpで終わるアドレスを入力してください。");
+    return; // 許可されていないアドレスなら登録処理を中断
+  }
+
 
   const data = new URLSearchParams();
   data.append('action', 'resetPassword');
