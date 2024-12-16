@@ -1,3 +1,5 @@
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwm32ovGY1jct1PfaJoYgISIzJR1lzHjLF9GVHOFJUD4nJHuGlHNxyt0ZCsjlBGsr4gCg/exec'; // スクリプトURLを置き換える
+
 function showOrHide() {
   let showPass = document.getElementById("pass");
   let check = document.getElementById("showPassword");
@@ -17,7 +19,7 @@ function login() {
   data.append('mailAddress', mailAddress);
   data.append('password', pass);
 
-  fetch('https://script.google.com/macros/s/AKfycbxIza4c7pEr_yBzkzCugqrA1C62PulcyqNODmI3LTSpGfMLuM2PaWfXKlyVokRUmH2sLw/exec', {
+  fetch(SCRIPT_URL, {
     method: 'POST',
     body: data
   })
