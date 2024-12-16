@@ -1,3 +1,5 @@
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwm32ovGY1jct1PfaJoYgISIzJR1lzHjLF9GVHOFJUD4nJHuGlHNxyt0ZCsjlBGsr4gCg/exec'; // スクリプトURLを置き換える
+
 function sendResetEmail() {
   const mailAddress = document.getElementById('mailAddress').value;
 
@@ -19,7 +21,7 @@ function sendResetEmail() {
   data.append('mailAddress', mailAddress);
 //https://script.google.com/macros/s/AKfycbwr5qd-zL9XJXmct6JRZCifnRGTfQW2Ctud41KmbZJHsv8a5Rrc1z0YSTKfWfng_PZ0Mw/exec
 //https://script.google.com/macros/s/AKfycbwhAlbxb-kHU6K2r_v_I7X9QIAM1kb1ZqidwbogigBTkhWNSb_S6VyHglYjeOv_PPpoFA/exec
-  fetch('https://script.google.com/macros/s/AKfycby3cRLieXHL1xc-aC737dd60YqZLj24TYFH26eqS97gQTY3iCtKHdj_7b7Ios8_YJ149g/exec', {
+  fetch(SCRIPT_URL, {
     method: 'POST',
     body: data
   })
