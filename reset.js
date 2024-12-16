@@ -1,4 +1,4 @@
-var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwP5xJ3XD8535dLxYxi13CsCsDEf3zZo0mQ0lsVVfgNT7n6b4eiHpPfsFtD5qNzuEZgg/exec'; // スクリプトURLを置き換える
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwm32ovGY1jct1PfaJoYgISIzJR1lzHjLF9GVHOFJUD4nJHuGlHNxyt0ZCsjlBGsr4gCg/exec'; // スクリプトURLを置き換える
 
 function sendResetEmail() {
   const mailAddress = document.getElementById('mailAddress').value;
